@@ -1,0 +1,43 @@
+# ==========================
+# Backend
+# ==========================
+backend/node_modules/
+backend/.env
+backend/.env.local
+backend/.env.development
+backend/.env.production
+backend/.DS_Store
+
+# Logs
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+
+# Build
+backend/dist/
+backend/build/
+
+# ==========================
+# Frontend
+# ==========================
+frontend/node_modules/
+frontend/.env
+frontend/.env.local
+frontend/.env.development
+frontend/.env.production
+frontend/.DS_Store
+
+# Logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# Build
+frontend/dist/
+frontend/build/
+
+# ==========================
+# General System Files
+# ==========================
+.DS_Store
+Thumbs.db

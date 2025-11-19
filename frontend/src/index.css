@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* optional global styles without @apply (Tailwind v4) */
+
+.scrollbar-soft {
+  scrollbar-width: thin;
+  scrollbar-color: #d9cbb8 #fff7ea;
+}
+.scrollbar-soft::-webkit-scrollbar {
+  height: 10px;
+}
+.scrollbar-soft::-webkit-scrollbar-track {
+  background: #fff7ea;
+  border-radius: 9999px;
+}
+.scrollbar-soft::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #f2d6bd, #eacfb2);
+  border-radius: 9999px;
+  border: 2px solid #fff7ea;
+}
+.scrollbar-soft::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #efcaa5, #e1c39a);
+}
+body {
+  cursor: none;
+}
+
+input, textarea {
+  cursor: text !important;
+}
+/* Hide the default cursor everywhere */
+* {
+  cursor: none !important;
+}
+
+/* Allow text inputs to show caret normally */
+input, textarea {
+  cursor: text !important;
+}
