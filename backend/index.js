@@ -26,7 +26,7 @@ app.use(express.json({ limit: "10mb" }));  // for JSON
 app.use(express.urlencoded({ limit: "10mb", extended: true })); 
 app.use(cookieParser());
 app.get("/", (req, res) => {
-    res.send("Hello World! version 1.0.0");
+    res.send("Hello World! version 3.0.0");
   });
 
 app.use(
