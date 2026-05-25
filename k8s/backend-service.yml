@@ -5,9 +5,9 @@ metadata:
   namespace: playnest
 spec:
   selector:
-    name: backend
+    app: backend
   ports:
     - protocol: TCP
       port: 5000
       targetPort: 5000
-      type: ClusterIP
+  type: ClusterIP
