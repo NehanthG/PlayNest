@@ -2,8 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongo-deployment
-  labels:
-    app: mongo
+  namespace: playnest
 spec:
   replicas: 1
   selector:
