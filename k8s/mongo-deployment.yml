@@ -2,8 +2,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongo-deployment
+
   labels:
     app: mongo
+
+  namespace: playnest
+
 spec:
   replicas: 1
   selector:
@@ -16,6 +20,10 @@ spec:
     spec:
       containers:
       - name: mongo
+
         image: mongo:latest
+
+        image: mongo:6
+
         ports:
         - containerPort: 27017
