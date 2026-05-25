@@ -6,7 +6,7 @@ import AICache from "../models/AICache.js"; // ✅ import cache model
 dotenv.config();
 const router = express.Router();
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || "your_gemini_api_key");
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
 // helper to safely parse JSON
