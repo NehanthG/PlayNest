@@ -5,8 +5,7 @@ metadata:
   namespace: playnest
 spec:
   rules:
-  - host: myapp.local
-    http:
+  - http:
       paths:
       - path: /
         pathType: Prefix
