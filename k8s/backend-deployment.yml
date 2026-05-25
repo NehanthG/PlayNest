@@ -2,12 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend-deployment
-
-  labels:
-    app: backend
-
   namespace: playnest
-
 spec:
   replicas: 3
   selector:
@@ -23,7 +18,6 @@ spec:
         image: utej8553/playnest-backend:latest
         ports:
         - containerPort: 5000
-
         env:
         - name: MONGO_URI
           value: mongodb://mongo-service:27017/playnest
@@ -31,4 +25,3 @@ spec:
           value: mysecret
         - name: PORT
           value: "5000"
-
