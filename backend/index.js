@@ -25,8 +25,8 @@ const __dirname = path.resolve();
 app.use(express.json({ limit: "10mb" }));  // for JSON
 app.use(express.urlencoded({ limit: "10mb", extended: true })); 
 app.use(cookieParser());
-app.get("/", (req, res) => {
-    res.send("Hello World! version 7.0.0");
+app.get("/api", (req, res) => {
+    res.send("PlayNest API version 7.0.0");
   });
 
 app.use(
