@@ -8,6 +8,6 @@ spec:
     name: backend
   ports:
     - protocol: TCP
-      port: 5173
-      targetPort: 5173
+      port: 5000
+      targetPort: 5000
       type: ClusterIP
